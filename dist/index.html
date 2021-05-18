@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>贪吃蛇</title>
+</head>
+
+<body>
+    <!-- 创建场景 -->
+    <div id="scenes">
+
+        <!-- 游戏舞台 -->
+        <div id="stage">
+
+            <div id="snake">
+                <div id="herd"></div>
+            </div>
+
+            <div id="food">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <!-- 积分板 -->
+        <div id="information">
+            <!-- 等级 -->
+            <div>
+                checkpoint:<span id="checkpoint">1</span>
+            </div>
+            <!-- 积分 -->
+            <div>
+                integral:<span id="integral">0</span>
+            </div>
+        </div>
+
+        <!-- 操作按钮 -->
+        <div id="operating">
+            <button class="action" onclick="action()">开始</button>
+            <button class="restart" onclick="restart()">重新开始</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
